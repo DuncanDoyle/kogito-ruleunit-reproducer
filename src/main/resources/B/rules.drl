@@ -1,0 +1,17 @@
+package B;
+
+import java.lang.String;
+
+rule "Find Good Morning"
+when
+    String(this == "Good Morning")
+then
+    System.out.println("We've found a Good Morning");
+end
+
+rule "Find Good Night"
+when
+    String(this == "Good Night")
+then
+    System.out.println("We've found a Good Night");
+end

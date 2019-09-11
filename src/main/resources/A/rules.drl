@@ -1,0 +1,17 @@
+package A;
+
+import java.lang.String;
+
+rule "Find Hello"
+when
+    String(this == "Hello")
+then
+    System.out.println("We've found a Hello");
+end
+
+rule "Find Goodbye"
+when
+    String(this == "Goodbye")
+then
+    System.out.println("We've found Goodbye");
+end
